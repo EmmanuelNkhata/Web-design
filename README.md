@@ -17,7 +17,7 @@ contact.html: Form with ID contactForm
 FAQ Section: Click any question to expand/collapse answers. Only one answer stays open at a time.
 script.js: initFAQAccordion(), toggleFAQItem()
 
-style.css: .answer visibility transitions
+style.css: .answer visibility transitions.
 
 Team Members: Click "Load Team Members" to display Emmanuel Nkhata (emmanuelnkhata701@gmail.com) and Stephan Nyirenda (stephan.nyirenda@cs.unza.zm) with their roles.
 script.js: Modified loadTeamMembers() with hardcoded data
