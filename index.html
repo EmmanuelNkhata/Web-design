@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Emmanuel Nkhata, Stephan Nyirenda">
+    <meta name="description" content="TechSolutions - University of Zambia Computer Science Project">
+    <title>TechSolutions | University of Zambia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/techsolutions-icon.png">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar" aria-label="Main navigation">
+                <div class="logo-container">
+                    <img src="images/unza-logo.png" alt="University of Zambia Logo" class="unza-logo">
+                    <a href="index.html" class="logo">TechSolutions</a>
+                </div>
+                <ul class="nav-links" role="list">
+                    <li><a href="index.html" aria-current="page">Home</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                    <span>Dark Mode</span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="hero" aria-labelledby="hero-heading">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 id="hero-heading">Innovative Tech Solutions</h1>
+                    <p class="hero-subtitle">A Computer Science initiative at the University of Zambia</p>
+                    <div class="hero-buttons">
+                        <a href="#team" class="btn btn-primary">Meet Our Team</a>
+                        <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="team" class="team-section" aria-labelledby="team-heading">
+            <div class="container">
+                <h2 id="team-heading">Our Team</h2>
+                <p class="section-subtitle">Meet the Computer Science students behind this project</p>
+                <div class="team-content">
+                    <ul id="userList" class="team-list" role="list"></ul>
+                    <button id="loadUsersBtn" class="btn btn-secondary">
+                        <i class="fas fa-users"></i> Load Team Members
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section" aria-labelledby="faq-heading">
+            <div class="container">
+                <h2 id="faq-heading">Frequently Asked Questions</h2>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <h3 class="question" tabindex="0">
+                            <span>What is TechSolutions?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </h3>
+                        <div class="answer">
+                            <p>TechSolutions is a student-led initiative from the University of Zambia's Computer Science Department 4th year lab 4 focused on developing web page design.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <h3 class="question" tabindex="0">
+                            <span>What are you learning outcome</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </h3>
+                        <div class="answer">
+                            <p>TThe learning outcome of the project is to develop practical skills in web design and CSS customization, including how to:
+
+                                Use CSS variables to manage themes.
+                                
+                                Customize a website’s look and feel (e.g., changing to orange theme).
+                                
+                                Organize and structure styles for responsive, professional layouts.
+                                
+                                Add new functional sections like a “Services” tag..</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <h3 class="question" tabindex="0">
+                            <span>How is this project graded?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </h3>
+                        <div class="answer">
+                            <p>This project is part of our Web Development Technologies course assessment, graded based on functionality, design, and implementation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo-container">
+                        <img src="images/unza-logo.png" alt="University of Zambia Logo" class="unza-logo-small">
+                        <span class="logo">TechSolutions</span>
+                    </div>
+                    <p>4th year web designat the University of Zambia</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <nav aria-label="Footer navigation">
+                        <ul role="list">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt"></i> UNZA Great East Road Campus</p>
+                        <p><i class="fas fa-phone"></i> <a href="tel:+260976802800">+260 976 802 800</a></p>
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:emmanuelnkhata701@gmail.com">emmanuelnkhata701@gmail.com</a></p>
+                    </address>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; <span id="currentYear"></span> TechSolutions - University of Zambia. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+    <script>
+        // Current year for copyright
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

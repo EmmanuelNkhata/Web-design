@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Emmanuel Nkhata, Stephan Nyirenda">
+    <meta name="description" content="Contact TechSolutions at University of Zambia">
+    <title>Contact Us | TechSolutions - UNZA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/techsolutions-icon.png">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar" aria-label="Main navigation">
+                <div class="logo-container">
+                    <img src="images/unza-logo.png" alt="University of Zambia Logo" class="unza-logo">
+                    <a href="index.html" class="logo">TechSolutions</a>
+                </div>
+                <ul class="nav-links" role="list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html" aria-current="page">Contact</a></li>
+                </ul>
+                <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                    <span>Dark Mode</span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="contact-section" aria-labelledby="contact-heading">
+            <div class="container">
+                <h1 id="contact-heading">Contact Our Team</h1>
+                <p class="section-subtitle">Get in touch with the TechSolutions team at University of Zambia</p>
+                
+                <div class="contact-container">
+                    <section class="contact-form-section" aria-labelledby="form-heading">
+                        <h2 id="form-heading">Send Us a Message</h2>
+                        <form id="contactForm" class="contact-form" novalidate>
+                            <div class="form-group">
+                                <label for="nameInput">Full Name</label>
+                                <input type="text" id="nameInput" name="name" required 
+                                       placeholder="Enter your full name" aria-required="true">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="emailInput">Email Address</label>
+                                <input type="email" id="emailInput" name="email" required
+                                       placeholder="Enter your email" aria-required="true">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subjectInput">Subject</label>
+                                <select id="subjectInput" name="subject" required aria-required="true">
+                                    <option value="">Select a subject</option>
+                                    <option value="project">Project Inquiry</option>
+                                    <option value="join">Join Our Team</option>
+                                    <option value="collaboration">Collaboration</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="messageInput">Your Message</label>
+                                <textarea id="messageInput" name="message" rows="5" required
+                                          placeholder="How can we help you?" aria-required="true"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i> Send Message
+                            </button>
+                        </form>
+                    </section>
+                    
+                    <section class="contact-info" aria-labelledby="office-heading">
+                        <h2 id="office-heading">Our Office</h2>
+                        
+                        <address>
+                            <div class="info-item">
+                                <i class="fas fa-university" aria-hidden="true"></i>
+                                <div>
+                                    <h3>University of Zambia</h3>
+                                    <p>Computer Science Department</p>
+                                    <p>Great East Road Campus</p>
+                                    <p>Lusaka, Zambia</p>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <i class="fas fa-phone" aria-hidden="true"></i>
+                                <div>
+                                    <a href="tel:+260976802800" class="phone-link">+260 976 802 800</a>
+                                    <p>Monday-Friday: 8:00 AM - 5:00 PM</p>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
+                                <div>
+                                    <a href="mailto:emmanuelnkhata701@gmail.com" class="email-link">emmanuelnkhata701@gmail.com</a>
+                                    <p>Primary contact email</p>
+                                </div>
+                            </div>
+                        </address>
+                        
+                        <div class="map-container">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1911.2380822022464!2d28.3228123157193!3d-15.38884778911029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1940f5e7c94e6b4b%3A0x7db9d2e8436d6b3a!2sUniversity%20of%20Zambia!5e0!3m2!1sen!2szm!4v1620000000000!5m2!1sen!2szm" 
+                                    width="100%" 
+                                    height="300" 
+                                    style="border:0;" 
+                                    allowfullscreen="" 
+                                    loading="lazy"
+                                    title="University of Zambia Location Map"
+                                    aria-label="Map showing University of Zambia location">
+                            </iframe>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo-container">
+                        <img src="images/unza-logo.png" alt="University of Zambia Logo" class="unza-logo-small">
+                        <span class="logo">TechSolutions</span>
+                    </div>
+                    <p>A Computer Science project at the University of Zambia</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <nav aria-label="Footer navigation">
+                        <ul role="list">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt"></i> UNZA Great East Road Campus</p>
+                        <p><i class="fas fa-phone"></i> <a href="tel:+260976802800">+260 976 802 800</a></p>
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:emmanuelnkhata701@gmail.com">emmanuelnkhata701@gmail.com</a></p>
+                    </address>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; <span id="currentYear"></span> TechSolutions - University of Zambia. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+    <script>
+        // Current year for copyright
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
+        // Format phone number display
+        document.querySelectorAll('.phone-link').forEach(link => {
+            link.textContent = link.textContent.replace(/(\d{3})(\d{3})(\d{4})/, '$1 $2 $3');
+        });
+    </script>
+</body>
+</html>
